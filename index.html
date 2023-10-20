@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.1.min.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ 
+    <title>Document</title>
+    <script >
+        $(document).ready(function(){
+            $("p").click(function(){
+                $(this).hide();
+            });
+            $(".test").dblclick(function(){
+                alert("messi the GOAT");
+                // $(this).hide();
+            })
+        });
+        $("p").on({
+            Mouseenter: function(){
+                $(this).css("background-color", "lightblue");
+            };
+            mouseleave: function(){
+                $(this).css("background-color", "lightgray");
+            };
+            click: function(){
+                $(this).css("background-color","yellow")
+            }
+        });
+    </script>
+</head>
+<body>
+   
+
+    <p >IF you click me i will vanish from the browser.</p>
+    <a class="test">click twice before me away!</a>
+
+    <p>Abeg click me too ya...</p>
+   
+    
+</body>
+</html>
